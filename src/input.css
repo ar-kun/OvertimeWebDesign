@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+ @apply font-primary box-border m-0 p-0;
+}
+
+.today {
+ @apply text-2xl font-bold bg-secondary rounded-lg text-primary;
+}
+
+.next-date,
+.prev-date {
+ @apply text-lg text-gray-400 hover:text-primary hover:bg-secondary/50 rounded-lg;
+}
+
+.dt-buttons {
+ @apply [&>*]:!rounded-lg [&>*]:!bg-secondary [&>*]:!text-primary;
+}
+
+.dataTables_filter {
+ @apply !flex !justify-end;
+}
+.dataTables_info {
+ @apply !float-left;
+}
+.dataTables_paginate {
+ @apply !flex !justify-end;
+}
+.dt-button-background {
+ @apply !opacity-50;
+}

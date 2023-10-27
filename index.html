@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/output.css" rel="stylesheet" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/jsmath-cmmi10" rel="stylesheet" />
+
+  <!-- Font awosome -->
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+  />
+
+  <title>Overtime Management</title>
+ </head>
+ <body class="bg-repeat-y bg-contain" style="background-image: url('./dist/img/bg.png')">
+  <header>
+   <nav class="hidden fixed lg:flex justify-end gap-14 w-full px-32 py-5 z-20 transition-all" id="navbar">
+    <ul class="flex justify-between gap-10 items-center text-2xl">
+     <li class="group">
+      <a
+       href="#home"
+       class="group-hover:text-secondary duration-700 after:block after:origin-left after:scale-x-0 after:border-b-4 after:border-third after:pb-1 after:transition-all after:content-[''] hover:after:scale-x-100"
+       >Home</a
+      >
+     </li>
+     <li class="group">
+      <a
+       href="#"
+       class="group-hover:text-secondary duration-700 after:block after:origin-left after:scale-x-0 after:border-b-4 after:border-third after:pb-1 after:transition-all after:content-[''] hover:after:scale-x-100"
+       >About</a
+      >
+     </li>
+     <li class="group">
+      <a
+       href=""
+       class="group-hover:text-secondary duration-700 after:block after:origin-left after:scale-x-0 after:border-b-4 after:border-third after:pb-1 after:transition-all after:content-[''] hover:after:scale-x-100"
+       >FAQs</a
+      >
+     </li>
+     <li class="group">
+      <a
+       href=""
+       class="group-hover:text-secondary duration-700 after:block after:origin-left after:scale-x-0 after:border-b-4 after:border-third after:pb-1 after:transition-all after:content-[''] hover:after:scale-x-100"
+       >Contact</a
+      >
+     </li>
+    </ul>
+    <div class="w-14 h-1/4 bg-white rounded-full">
+     <img src="./dist/img/profile.png" alt="" class="" />
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section id="head" class="min-h-screen flex flex-col justify-between">
+    <div class="container text-center mt-10 lg:absolute lg:top-1/3 lg:right-[8%] lg:w-1/3" id="headCaptions">
+     <h1 class="text-3xl lg:text-4xl font-bold">Overtime Management</h1>
+     <p class="lg:text-xl font-light mb-10 mt-3">
+      Lorem ipsum dolor sit amet consectetur. Ac eleifend pellentesque est sit. Libero praesent ornare posuere eu nulla ut quam lacus aenean.
+     </p>
+     <a
+      href="login.html"
+      class="bg-third px-5 py-2 lg:px-10 lg:rounded-full relative z-10 text-primary rounded-md text-xl shadow-md shadow-slate-500 hover:shadow-none hover:bg-secondary transition-all"
+      >Get Started</a
+     >
+    </div>
+    <img src="./dist/img/head-mobile.png" alt="" class="lg:hidden" />
+    <img src="./dist/img/head-dekstop.png" alt="" class="hidden lg:block" />
+   </section>
+   <section id="widget" class="bg-secondary h-28 lg:mx-32 -mt-4 lg:-mt-14 z-10 relative rounded-lg"></section>
+   <section id="about" class="lg:ms-32 mr-0 lg:my-24">
+    <h1 class="font-secondary text-4xl lg:text-5xl text-center my-10">About</h1>
+    <div class="lg:flex justify-between items-center">
+     <div class="lg:w-[40%] text-xl [&>p]:my-8 [&>p]:indent-10 text-justify px-[18px] lg:px-0">
+      <p>
+       Lorem ipsum dolor sit amet consectetur. Maecenas et feugiat erat aenean suspendisse. Leo et purus sit ut urna in. Nisi sagittis platea neque
+       consequat dolor eget fermentum. Sed ac rutrum nam quis. Hac sit cursus malesuada ipsum consectetur tempus. Ullamcorper egestas volutpat
+       fermentum volutpat in nulla ut. Id sed ultrices magna dis eu lacus aliquam neque.
+      </p>
+      <p>
+       Lorem ipsum dolor sit amet consectetur. Maecenas et feugiat erat aenean suspendisse. Leo et purus sit ut urna in. Lorem ipsum dolor sit amet
+       consectetur adipisicing elit. Quam maxime odio nulla voluptatem incidunt ea.
+      </p>
+     </div>
+     <div class="w-full lg:w-[45%] flex justify-end">
+      <img src="./dist/img/about.png" alt="" class="w-[80%] lg:w-full" />
+     </div>
+    </div>
+   </section>
+   <section id="faqs" class="lg:mx-32 mr-0 lg:my-24">
+    <h1 class="font-secondary text-4xl lg:text-5xl text-center my-10">FAQs</h1>
+    <div class="mx-[18px] lg-mx-0 flex flex-col gap-5 justify-between items-center">
+     <div class="relative w-full">
+      <div id="btn-faqs" class="flex justify-between gap-2 items-center bg-third px-5 py-3 text-white rounded-xl relative z-10">
+       <p class="text-lg">Lsadasd dolor sit amet, consectetur adipisicing elit. Ullam, beatae. ?</p>
+       <i class="fa-solid fa-angle-down text-3xl"></i>
+      </div>
+      <div
+       class="bg-secondary p-5 -mt-2 hidden text-white rounded-b-xl overflow-hidden transform scale-y-0 origin-top transition-all duration-500"
+       id="faqs-section-content"
+      >
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolorum consequatur aliquam facilis amet facere, animi sapiente eveniet
+        doloribus cupiditate praesentium quae enim, ducimus quaerat consequuntur ipsa eaque voluptatem minus dolorem tempora culpa esse corrupti.
+        Fugit ratione nihil excepturi tenetur blanditiis in ad at! Praesentium omnis aspernatur nam neque minima.
+       </p>
+      </div>
+     </div>
+     <div class="relative w-full">
+      <div id="btn-faqs" class="flex justify-between gap-2 items-center bg-third px-5 py-3 text-white rounded-xl relative z-10">
+       <p class="text-lg">Lsadasd dolor sit amet, consectetur adipisicing elit. Ullam, beatae. ?</p>
+       <i class="fa-solid fa-angle-down text-3xl"></i>
+      </div>
+      <div
+       class="bg-secondary p-5 -mt-2 hidden text-white rounded-b-xl overflow-hidden transform scale-y-0 origin-top transition-all duration-500"
+       id="faqs-section-content"
+      >
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolorum consequatur aliquam facilis amet facere, animi sapiente eveniet
+        doloribus cupiditate praesentium quae enim, ducimus quaerat consequuntur ipsa eaque voluptatem minus dolorem tempora culpa esse corrupti.
+        Fugit ratione nihil excepturi tenetur blanditiis in ad at! Praesentium omnis aspernatur nam neque minima.
+       </p>
+      </div>
+     </div>
+     <div class="relative w-full">
+      <div id="btn-faqs" class="flex justify-between gap-2 items-center bg-third px-5 py-3 text-white rounded-xl relative z-10">
+       <p class="text-lg">Lsadasd dolor sit amet, consectetur adipisicing elit. Ullam, beatae. ?</p>
+       <i class="fa-solid fa-angle-down text-3xl"></i>
+      </div>
+      <div
+       class="bg-secondary p-5 -mt-2 hidden text-white rounded-b-xl overflow-hidden transform scale-y-0 origin-top transition-all duration-500"
+       id="faqs-section-content"
+      >
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolorum consequatur aliquam facilis amet facere, animi sapiente eveniet
+        doloribus cupiditate praesentium quae enim, ducimus quaerat consequuntur ipsa eaque voluptatem minus dolorem tempora culpa esse corrupti.
+        Fugit ratione nihil excepturi tenetur blanditiis in ad at! Praesentium omnis aspernatur nam neque minima.
+       </p>
+      </div>
+     </div>
+     <div class="relative w-full">
+      <div id="btn-faqs" class="flex justify-between gap-2 items-center bg-third px-5 py-3 text-white rounded-xl relative z-10">
+       <p class="text-lg">Lsadasd dolor sit amet, consectetur adipisicing elit. Ullam, beatae. ?</p>
+       <i class="fa-solid fa-angle-down text-3xl"></i>
+      </div>
+      <div
+       class="bg-secondary p-5 -mt-2 hidden text-white rounded-b-xl overflow-hidden transform scale-y-0 origin-top transition-all duration-500"
+       id="faqs-section-content"
+      >
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolorum consequatur aliquam facilis amet facere, animi sapiente eveniet
+        doloribus cupiditate praesentium quae enim, ducimus quaerat consequuntur ipsa eaque voluptatem minus dolorem tempora culpa esse corrupti.
+        Fugit ratione nihil excepturi tenetur blanditiis in ad at! Praesentium omnis aspernatur nam neque minima.
+       </p>
+      </div>
+     </div>
+     <div class="relative w-full">
+      <div id="btn-faqs" class="flex justify-between gap-2 items-center bg-third px-5 py-3 text-white rounded-xl relative z-10">
+       <p class="text-lg">Lsadasd dolor sit amet, consectetur adipisicing elit. Ullam, beatae. ?</p>
+       <i class="fa-solid fa-angle-down text-3xl"></i>
+      </div>
+      <div
+       class="bg-secondary p-5 -mt-2 hidden text-white rounded-b-xl overflow-hidden transform scale-y-0 origin-top transition-all duration-500"
+       id="faqs-section-content"
+      >
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolorum consequatur aliquam facilis amet facere, animi sapiente eveniet
+        doloribus cupiditate praesentium quae enim, ducimus quaerat consequuntur ipsa eaque voluptatem minus dolorem tempora culpa esse corrupti.
+        Fugit ratione nihil excepturi tenetur blanditiis in ad at! Praesentium omnis aspernatur nam neque minima.
+       </p>
+      </div>
+     </div>
+     <div class="relative w-full">
+      <div id="btn-faqs" class="flex justify-between gap-2 items-center bg-third px-5 py-3 text-white rounded-xl relative z-10">
+       <p class="text-lg">Lsadasd dolor sit amet, consectetur adipisicing elit. Ullam, beatae. ?</p>
+       <i class="fa-solid fa-angle-down text-3xl"></i>
+      </div>
+      <div
+       class="bg-secondary p-5 -mt-2 hidden text-white rounded-b-xl overflow-hidden transform scale-y-0 origin-top transition-all duration-500"
+       id="faqs-section-content"
+      >
+       <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dolorum consequatur aliquam facilis amet facere, animi sapiente eveniet
+        doloribus cupiditate praesentium quae enim, ducimus quaerat consequuntur ipsa eaque voluptatem minus dolorem tempora culpa esse corrupti.
+        Fugit ratione nihil excepturi tenetur blanditiis in ad at! Praesentium omnis aspernatur nam neque minima.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="contact" class="lg:me-32 mr-0 lg:my-24">
+    <h1 class="font-secondary text-4xl lg:text-5xl text-center my-10">Contact</h1>
+    <div class="lg:flex justify-between items-center">
+     <div class="w-full lg:w-[45%] flex justify-start">
+      <img src="./dist/img/contact.png" alt="" class="w-[80%] lg:w-full" />
+     </div>
+     <div class="lg:w-[40%] text-xl [&>p]:my-8 [&>p]:indent-10 px-[18px] lg:px-0">
+      <div class="flex items-center">
+       <i class="fa-solid fa-chevron-left"></i>
+       <div class="border-b-2 border-slate-700 border-dashed w-full"></div>
+      </div>
+      <p class="text-center">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse beatae odio aliquam minus accusantium eveniet placeat, quaerat laboriosam rem
+      </p>
+      <form>
+       <div class="relative z-0 w-full mb-6 group rounded-b-lg bg-secondary px-5 shadow-md shadow-slate-500">
+        <input
+         type="email"
+         name="floating_email"
+         id="floating_email"
+         class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+         placeholder=" "
+         required
+        />
+        <label
+         for="floating_email"
+         class="peer-focus:font-medium absolute text-sm text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-focus:bg-third peer-focus:p-[0.4rem] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10"
+         >Email address</label
+        >
+       </div>
+       <div class="relative z-0 w-full mb-6 group rounded-b-lg bg-secondary px-5 shadow-md shadow-slate-500">
+        <textarea
+         name="floating_message"
+         id="floating_message"
+         cols="30"
+         rows="4"
+         class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+         placeholder=" "
+         required
+        ></textarea>
+        <label
+         for="floating_message"
+         class="peer-focus:font-medium absolute text-sm text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-focus:bg-third peer-focus:p-[0.4rem] peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10"
+         >Message</label
+        >
+       </div>
+       <div
+        class="bg-third rounded-xl text-center hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 dark:bg-third dark:hover:bg-bg-secondary dark:focus:ring-secondary shadow-md shadow-slate-500"
+       >
+        <button type="submit" class="text-white">Submit</button>
+       </div>
+      </form>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="h-44 bg-secondary lg:px-32 py-10 text-white">
+   <div class="container flex gap-10">
+    <div class="w-[40%] flex gap-5">
+     <i class="fa-solid fa-location-dot text-2xl"></i>
+     <p>APL Tower lt.37 Suite 1-8 Jl. Letjen S. Parman Kav. 28 Kel. Tanjung Duren Selatan Kec. Grogol Petamburan Kota Administrasi Jakarta Barat</p>
+    </div>
+    <div class="w-[15%] flex flex-col gap-3">
+     <div class="flex items-center gap-5">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <p>+62 811 19 500900</p>
+     </div>
+     <div class="flex items-center gap-5">
+      <i class="fa-solid fa-phone text-2xl"></i>
+      <p>+62 21 2934 5777</p>
+     </div>
+    </div>
+    <div class="w-[15%] flex gap-5 text-third">
+     <div
+      class="h-12 w-12 rounded-full bg-[#D1D9E5] flex items-center justify-center shadow-md shadow-slate-500 hover:bg-third hover:text-white hover:shadow-none"
+     >
+      <i class="fa-brands fa-linkedin-in text-2xl"></i>
+     </div>
+     <div
+      class="h-12 w-12 rounded-full bg-[#D1D9E5] flex items-center justify-center shadow-md shadow-slate-500 hover:bg-third hover:text-white hover:shadow-none"
+     >
+      <i class="fa-brands fa-instagram text-2xl"></i>
+     </div>
+     <div
+      class="h-12 w-12 rounded-full bg-[#D1D9E5] flex items-center justify-center shadow-md shadow-slate-500 hover:bg-third hover:text-white hover:shadow-none"
+     >
+      <i class="fa-brands fa-twitter text-2xl"></i>
+     </div>
+    </div>
+    <div class="w-[20%] h-20">
+     <img src="./dist/img/logo.png" alt="" class="-mt-5" />
+    </div>
+   </div>
+   <p class="text-center mt-5">Copyright by @arkun. 2023 Alright</p>
+  </footer>
+
+  <script>
+   window.onscroll = () => {
+    const navbar = document.getElementById('navbar');
+    const fixedNav = navbar.offsetTop;
+
+    if (window.pageYOffset > fixedNav) {
+     //  navbar.style.transform = 'translateY(0)';
+     navbar.classList.add('bg-secondary', 'bg-opacity-75', 'backdrop-blur-md', 'shadow-md', 'shadow-slate-500', 'text-primary');
+    } else {
+     // navbar.style.transform = 'translateY(-100%)';
+     navbar.classList.remove('bg-secondary', 'bg-opacity-75', 'backdrop-blur-md', 'shadow-md', 'shadow-slate-500', 'text-primary');
+    }
+   };
+
+   const btnFaqs = document.querySelectorAll('#btn-faqs');
+   const faqsSectionContent = document.querySelectorAll('#faqs-section-content');
+
+   btnFaqs.forEach((btn, index) => {
+    btn.addEventListener('click', function () {
+     toggleAnimation(faqsSectionContent[index]);
+    });
+   });
+
+   const toggleAnimation = (element) => {
+    if (element.classList.contains('scale-y-0')) {
+     element.classList.toggle('hidden');
+     setTimeout(() => {
+      element.classList.remove('scale-y-0');
+      element.classList.add('scale-y-100');
+     }, 0);
+    } else {
+     setTimeout(() => {
+      element.classList.toggle('hidden');
+     }, 300);
+     element.classList.remove('scale-y-100');
+     element.classList.add('scale-y-0');
+    }
+   };
+  </script>
+ </body>
+</html>
